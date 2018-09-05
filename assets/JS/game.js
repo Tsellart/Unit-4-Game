@@ -16,8 +16,9 @@ $(document).ready(function(){
     var myScore = 0;
 
     var wins = 0;
-
+        console.log(wins);
     var lose = 0;
+        console.log(lose);
 
     $('#wins').text(wins);
     $('#losses').text(lose);
@@ -27,10 +28,14 @@ $(document).ready(function(){
             
          $('#displayScore').text(randomScore);
 
-        var gem1 = Math.floor(Math.random()*10+1)
-        var gem2 = Math.floor(Math.random()*10+1)
-        var gem3 = Math.floor(Math.random()*10+1)
-        var gem4 = Math.floor(Math.random()*10+1)
+            gem1 = Math.floor(Math.random()*10+1)
+                console.log(gem1);
+            gem2 = Math.floor(Math.random()*10+1)
+                console.log(gem2);
+            gem3 = Math.floor(Math.random()*10+1)
+                console.log(gem3); 
+            gem4 = Math.floor(Math.random()*10+1)
+                console.log(gem4);
         myScore=0;
         $('#yourScore').text(myScore)
     }
