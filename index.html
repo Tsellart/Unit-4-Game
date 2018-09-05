@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="assets/JS/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <br><br>
+    <div class= "container bg-primary" >
+        <h1 class="text-center">Crystal Collectingtons</h1>
+        <p>You will be given a random number. With the four crystals below, add points to your score. You win if the scores match, if you go over however.. YOU LOSE. </p>
+    </div>
+    <div class="container bg-secondary">
+        <div class = "row">
+            <div class = "col">
+                <h2 class = "displayScore">Gem Level: </h2>
+            </div>
+            <div class = "col">
+                <h2 class = "wins">Wins: 0</h2>
+                <h2 class = "losses">Losses: 0</h2>
+            </div>
+        </div>
+
+        <div class ="row">
+            <div class = "col">
+                <button class="gemOne">
+                    <img  src="assets/Images/gem1.png">
+                </button>
+            </div>
+            <div class = "col">
+                <button class="gemTwo">
+                    <img  src="assets/Images/gem2.png">
+                </button>
+            </div>
+            <div class = "col">
+                <button class="gemThree">
+                    <img  src="assets/Images/gem3.png">
+                </button>
+            </div>
+            <div class = "col">
+                <button class ="gemFour">
+                    <img  src="assets/Images/gem4.png">
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <div class = "container bg-secondary">
+        <h2 class ="text-center">Your Total Score is:</h1>
+        <h2 class = "yourScore"></h2>
+    </div>
+    <script type= "text/javascript" src="assets/JS/game.js"></script>
+
+    
+</body>
+</html>
