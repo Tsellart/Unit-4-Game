@@ -21,9 +21,9 @@ $(document).ready(function(){
     var lose = 0;
         console.log(lose);
 
-    $('.wins').html(wins);
+    $('.wins').html('Wins: ' + wins);
     console.log(wins);
-    $('.losses').html(lose);
+    $('.losses').html('losses: ' + lose);
 
     $('.gemOne').on('click', function(){
        console.log("hi");
@@ -32,12 +32,12 @@ $(document).ready(function(){
        console.log(myScore);
         if (myScore === randomScore){
             wins++;
-            $('.wins').html(wins);
+            $('.wins').html('Wins: ' + wins);
 
         }
-        else (myScore > randomScore)
+        else if (myScore > randomScore)
             lose++;
-            $('.losses').html(lose);
+            $('.losses').html('losses: 0' + lose);
         
 
     })
@@ -47,12 +47,12 @@ $(document).ready(function(){
        console.log(myScore);
         if (myScore === randomScore){
             wins++;
-            $('.wins').html(wins);
+            $('.wins').html('Wins: ' + wins);
         
         }
-        else (myScore > randomScore)
+        else if (myScore > randomScore)
             lose++;
-            $('.losses').html(lose);
+            $('.losses').html('losses: 0' + lose);
         
     })
     $('.gemThree').on('click', function(){
@@ -61,11 +61,11 @@ $(document).ready(function(){
         console.log(myScore);
         if (myScore === randomScore){
             wins++;
-            $('.wins').html(wins);
+            $('.wins').html('Wins: ' + wins);
         }
-        else (myScore > randomScore)
+        else if (myScore > randomScore)
             lose++;
-            $('.losses').html(lose);
+            $('.losses').html('losses: 0' + lose);
 
         
     })
@@ -75,12 +75,12 @@ $(document).ready(function(){
         console.log(myScore);
         if (myScore === randomScore){
             wins++;
-            $('.wins').html(wins);
+            $('.wins').html('Wins: ' + wins);
 
         }
-        else (myScore > randomScore)
+        else if (myScore > randomScore)
             lose++;
-            $('.losses').html(lose);
+            $('.losses').html('losses: 0' + lose);
         
     })
 
