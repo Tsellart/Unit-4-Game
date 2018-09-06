@@ -3,7 +3,7 @@ $(document).ready(function(){
     var randomScore = Math.floor(Math.random()*100+1)
     console.log(randomScore);
 
-    $('#displayScore').text(randomScore);
+    $('.displayScore').html(randomScore);
 
     var gem1 = Math.floor(Math.random()*10+1);
         console.log(gem1);
@@ -13,6 +13,7 @@ $(document).ready(function(){
         console.log(gem3);
     var gem4 = Math.floor(Math.random()*10+1);
         console.log(gem4);
+
     var myScore = 0;
 
     var wins = 0;
@@ -20,72 +21,66 @@ $(document).ready(function(){
     var lose = 0;
         console.log(lose);
 
-    $('#wins').text(wins);
-    $('#losses').text(lose);
+    $('.wins').html(wins);
+    console.log(wins);
+    $('.losses').html(lose);
 
-    function reset(){
-        var randomScore = Math.floor(Math.random()*100+1)
-            
-         $('#displayScore').text(randomScore);
-
-            gem1 = Math.floor(Math.random()*10+1)
-                console.log(gem1);
-            gem2 = Math.floor(Math.random()*10+1)
-                console.log(gem2);
-            gem3 = Math.floor(Math.random()*10+1)
-                console.log(gem3); 
-            gem4 = Math.floor(Math.random()*10+1)
-                console.log(gem4);
-        myScore=0;
-        $('#yourScore').text(myScore)
-    }
-
-    $('#gem1').on('click', function(){
-        myScore = myScore + gem1;
+    $('.gemOne').on('click', function(){
+       console.log("hi");
+       myScore = myScore + gem1;
+       $('.yourScore').html(myScore);
+       console.log(myScore);
         if (myScore === randomScore){
             wins++;
-            $('#wins').text(wins);
+            $('.wins').html(wins);
+
         }
         else (myScore > randomScore)
             lose++;
-            $('#losses').text(lose);
+            $('.losses').html(lose);
         
 
     })
-    $('#gem2').on('click', function(){
-        myScore = myScore + gem2;
+    $('.gemTwo').on('click', function(){
+       myScore = myScore + gem2;
+       $('.yourScore').html(myScore);
+       console.log(myScore);
         if (myScore === randomScore){
             wins++;
-            $('#wins').text(wins);
+            $('.wins').html(wins);
         
         }
         else (myScore > randomScore)
             lose++;
-            $('#losses').text(lose);
+            $('.losses').html(lose);
         
     })
-    $('#gem3').on('click', function(){
+    $('.gemThree').on('click', function(){
         myScore = myScore + gem3;
+        $('.ourScore').html(myScore);
+        console.log(myScore);
         if (myScore === randomScore){
             wins++;
-            $('#wins').text(wins);
+            $('.wins').html(wins);
         }
         else (myScore > randomScore)
             lose++;
-            $('#losses').text(lose);
+            $('.losses').html(lose);
 
         
     })
-    $('#gem4').on('click', function(){
+    $('.gemFour').on('click', function(){
         myScore = myScore + gem4;
+        $('.yourScore').html(myScore);
+        console.log(myScore);
         if (myScore === randomScore){
             wins++;
-            $('#wins').text(wins);
+            $('.wins').html(wins);
 
         }
         else (myScore > randomScore)
             lose++;
-            $('#losses').text(lose);
+            $('.losses').html(lose);
         
     })
 
